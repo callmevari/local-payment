@@ -1,0 +1,20 @@
+javascript: lenguaje de programación que nació en la web en los 90, en el navegador Netscape
+motor v8: es el motor que usa Google Chrome para correr javascript
+node: como js era un lenguaje solo de frontend (navegador) alguien tomó el motor v8 de google, le hizo unos retoques, y creó node, una plataforma para correr javascript del lado del servidor (backend)
+paquete / package: libreria de terceros que uno instala para usar en su app
+npm: node package manager / administrador de paquetes de node: es la herramienta para instalar librerias de javascript en tu proyecto
+
+tipos de datos en programación:
+
+- string (cadena de texto): 'Salomon', 'Pepito', 'Algo123'
+- booleano: true / false
+- integer (entero): 1, 2, 500, -1000
+- float (flotante): 3.14, 2.6, 33.333
+- array (arreglo): [1, 2, 3, 4, 5] - ['Desayuno', 'Almuerzo', 'Merienda', 'Cena'] - [true, 1, 'pepito']
+- objects (objetos): { nombre: 'salo', edad: 25, pelo: 'negro' } - { titulo: 'murio alguien', diario: 'clarin' }
+
+posibles preguntas:
+
+- cómo creaste la app? con qué herramienta o framework?
+R: create-react-app (comando: npx create-react-app nombre) - create-react-app NO es un framework, es una librería / herramienta
+
