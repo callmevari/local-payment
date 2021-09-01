@@ -1,9 +1,14 @@
 const RadioButton = (props) => {
-  
   const options = props.options.map((element, index) => {
     return (
       <div key={index}>
-        <input type="radio" id={element.value} name={props.name} value={element.value} />
+        <input 
+          type="radio" 
+          id={element.value} 
+          name={props.name}
+          value={element.value} 
+          onChange={props.onChange}
+        />
         <label htmlFor={element.value}>{element.label}</label><br />
       </div>
     );

@@ -3,9 +3,7 @@ const Select = (props) => {
   return (
     <>
       <h2>{props.title}</h2>
-      <select
-        onChange={props.onChange}
-      >
+      <select onChange={props.onChange}>
         {options}
       </select>
     </>

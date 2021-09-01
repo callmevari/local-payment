@@ -3,6 +3,7 @@ motor v8: es el motor que usa Google Chrome para correr javascript
 node: como js era un lenguaje solo de frontend (navegador) alguien tomó el motor v8 de google, le hizo unos retoques, y creó node, una plataforma para correr javascript del lado del servidor (backend)
 paquete / package: libreria de terceros que uno instala para usar en su app
 npm: node package manager / administrador de paquetes de node: es la herramienta para instalar librerias de javascript en tu proyecto
+estado (state) de un componente: un estado en un componente de react provee al componente de cierta "inteligencia" para realizar operaciones
 
 tipos de datos en programación:
 
@@ -18,3 +19,23 @@ posibles preguntas:
 - cómo creaste la app? con qué herramienta o framework?
 R: create-react-app (comando: npx create-react-app nombre) - create-react-app NO es un framework, es una librería / herramienta
 
+
+repasar:
+
+- react (videos / curso)
+- estados de un componente
+- ciclos de vida de un componente
+- hooks:
+
+  setState({ tipo_comida: 'Almuerzo' }): // actualizo 1 solo campo del estado
+
+  setState((prevState) => { // actualizo el estado manteniendo el estado previo
+    return {
+      ...prevState,
+      tipo_comida: element.target.value
+    }
+  })
+
+bugs:
+
+- si cambio tipo_comida después de poner 'si' en ingirio_postre, ingirio_postre mantiene el valor de 'si' (deberia resetearse)
